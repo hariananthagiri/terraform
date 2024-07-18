@@ -71,3 +71,6 @@
 *   and, 
 *   that
 * ]
+# for best practice use interpolation in functions
+### "${functions+variables+special charectors}"
+
