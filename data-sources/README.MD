@@ -13,7 +13,8 @@
 * we can use "n" no.of filters in datasources
 * filter is used to give more information about resources where we are featching the data
 #### syntax
-* filter {
-*        name   = "name"
-*        values = ["Centos-8-DevOps-Practice"]
-*    }
+filter {
+    name   = "name"
+    values = ["Centos-8-DevOps-Practice"]
+}
+
