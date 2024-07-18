@@ -6,4 +6,8 @@
 *    source = "../give/path"
 *    variable = "value"
 * }
-   
+### some special charectors in linux
+* . (dot) referes current folder
+* .. (double-dot) refers one step back
+* / it refer to root
+* ~ tilde refers to home directory 
