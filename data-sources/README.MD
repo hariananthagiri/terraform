@@ -8,3 +8,12 @@
 ### declareing datasources
 * value = data.aws_ami.datasource_name.id
 * ami value stored there as shown in above
+
+### filters
+* we can use "n" no.of filters in datasources
+* filter is used to give more information about resources where we are featching the data
+#### syntax
+* filter {
+*        name   = "name"
+*        values = ["Centos-8-DevOps-Practice"]
+*    }
