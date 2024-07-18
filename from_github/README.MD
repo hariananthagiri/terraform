@@ -1,6 +1,6 @@
 # Featching the data from github to directly use the code from github to terraform
 ## syntax 
-* source = "git::<http-github-link>?ref=main"
+* source = "git::git-hub-link?ref=main"
 
 ### example
 * source = "git::https://github.com/shivaananthagiri/Terraform.git?ref=main"
