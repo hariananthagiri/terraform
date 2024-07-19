@@ -17,3 +17,5 @@
 *    password = "DevOps321"
 *    host     = self.public_ip   # self = aws_instance.web
 *  }
+
+##### "DOUBLE QUTATIONS ARE MANDATORY TO RUN COMMANDS" 

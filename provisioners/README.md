@@ -7,3 +7,5 @@
 * file provisioner
 * local-exec
 * remote-exec
+
+##### "DOUBLE QUTATIONS ARE MANDATORY TO RUN COMMANDS" 

@@ -15,3 +15,5 @@
 * when = destroy
 * on_failure = continue / fail
 *  }
+
+##### "DOUBLE QUTATIONS ARE MANDATORY TO RUN COMMANDS" 
