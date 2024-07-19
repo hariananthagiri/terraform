@@ -9,7 +9,7 @@ resource "aws_instance" "web" {     # terraform reference name
     inline = [ 
       "echo 'iam doing this in remote-exec' > /home/centos/hari.txt",
       "sudo yum install nginx -y",
-      "systemctl start nginx"
+      "sudo systemctl start nginx"
      ]
   }
   connection {
