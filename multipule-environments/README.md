@@ -23,9 +23,4 @@
 ### cons
 * code duplication you need to maintain repos 
 
-### NOTE
-* it will use single bucket for workspace
-* for every workspace it create new folder in env folder in same bucket
-* here code is same but variable paly key role variable changes depends on workspace
-
 
