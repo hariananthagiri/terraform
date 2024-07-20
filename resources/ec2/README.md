@@ -15,6 +15,7 @@
 *  ami           = var.ami_id 
 *  instance_type = var.instance_type
 * #attribute = value
+* #arguments
 *  tags = var.tags # aws instance name
 * }
  
