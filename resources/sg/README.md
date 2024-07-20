@@ -31,12 +31,12 @@
 * genrelly we wont change egress it is fixed
 
 #### syntax
-egress {
-        from_port        = 0
-        to_port          = 0
-        protocol         = "-1"
-        cidr_blocks      = ["0.0.0.0/0"]
-    }
+* egress {
+*        from_port        = 0
+*        to_port          = 0
+*        protocol         = "-1"
+*        cidr_blocks      = ["0.0.0.0/0"]
+*    }
 
 * to attach our created security group to ec2 instance by below way
 ####   vpc_security_group_ids = [aws_security_group.roboshop-all.id]  # to attach created security group to our instance
