@@ -28,3 +28,10 @@
 * here provider was aws i want to create instance and name was web
 #### resource_name
 * it was completly userdefined you can give whatever name you want to give
+
+### to supply any value in terraform use
+##### resouce_type.resource_name.argument
+* it directly gives the value stored init
+
+* if we do any changes in code after createing the resouse in terraform again running terraform init
+#### terraform destroy it first and create it again
