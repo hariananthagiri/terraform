@@ -64,7 +64,8 @@
 * not select auto assign private ipv4 option leave it as it is
 
 ### vpc peering
-* by default we cant connect to 2 vpcs it is possible through vpc peering both vpcs should have different CIDR
+* by default we cant connect to 2 vpcs it is possible through vpc peering 
+* both vpcs should have different CIDR
 
 #### requester vpc
 * I WANT TO CONNECT WITH YOU PLESE ACCEPT MY REQUEST
