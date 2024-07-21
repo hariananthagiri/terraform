@@ -23,6 +23,7 @@
 * NAT gateway should be created in public subnet because it has internet connectivity then we add it in the route_tables
 ##### EIP
 * elastic ip
+* it is a static ip address
 * to setup NAT gateway we need to create a elastic ip
 * elastic ip means a fixed ip it wont change again and again
 * it is chargeble
