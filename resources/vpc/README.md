@@ -13,6 +13,7 @@
 * for internet gateway we use cidr "0.0.0.0/0"
 #### create NAT gateway
 * it stands for Network Address Translator
+* it is used to enable the outgoing internet
 * it controls the outgoing traffic for our private subnet
 * any resource that present in private subnet should not have the access from outside  of our aws environment
 * sometimes those particular servers present inside our public subnet need to access the internet to get the updates
