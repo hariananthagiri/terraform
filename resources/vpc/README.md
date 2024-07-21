@@ -2,6 +2,8 @@
 * it stands for virtual private cloud
 * it act as data center
 * it is an isolated network with in aws where you can create resources only for our project
+### NOTE
+* when we create a vpc aws will automatically  creates a default route_table
 
 ### steps to setup vpc
 
@@ -21,6 +23,10 @@
 * NAT gateway allows only outgoing traffic for private subnets incomeing traffic is not allowed here
 ##### note
 * NAT gateway should be created in public subnet because it has internet connectivity then we add it in the route_tables
+* created NAT gateway using public subnet and attach it with private subnet using routes
+##### route_table ----> private-route_table ----> routes ----> edit-routes ----> attach NAT-gateway with 0.0.0.0/0 ----> save changes
+##### route_table ----> database-route_table ----> routes ---> edit-routes ----> attach NAT-gateway with 0.0.0.0/0 ----> save changes
+
 ##### EIP
 * elastic ip
 * it is a static ip address
@@ -29,6 +35,7 @@
 * it is chargeble
 
 #### create subnets by attaching with our vpc
+* subnet contains Availabulity Zones AZ-(1a, 1b 1c)
 * create public subnet with cidr "10.0.1.0/24"
 * create private subnet with cidr "10.0.2.0/24"
 
@@ -77,9 +84,14 @@
 * vpcs in different region another account
 #### destination
 * for accpter route_table for reciver route_table we have to do peering connections by using there destinations as below
-##### for accepter ----------> use reciver destination cidr ip-address
-##### for reciver ----------> use accepter destination cidr ip-address
+##### for accepter ----------> use reciver destination cidr ip-address in accepter vpc route_table routes
+##### for reciver ----------> use accepter destination cidr ip-address in reciver  vpc route_table routes
 * we perform above operation using routes
+##### accepter_vpc ---> route_table ---> select a route_table ---> routes ---> edit routes ---> use reciver destination cidr 
+#####                                                          ---> target ---> vpc-peering ---> add route ---> save changes
+
+##### reciver_vpc ---> route_table ---> select a route_table ---> routes ---> edit routes ---> use accepter destination cidr 
+#####                                                          ---> target ---> vpc-peering ---> add route ---> save changes
 
 ##### vpc_peering setup
 * vpc_peering connection
