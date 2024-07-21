@@ -81,6 +81,9 @@
 ##### for reciver ----------> use accepter destination cidr ip-address
 * we perform above operation using routes
 
+##### vpc_peering setup
+* vpc_peering connection
+* routes
 
 
 

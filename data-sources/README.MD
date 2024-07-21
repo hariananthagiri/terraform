@@ -18,3 +18,15 @@
 *     values = ["Centos-8-DevOps-Practice"]
 * }
 
+### default values
+* by using data-sources we can pass default values as shown below
+#### syntax
+* data "resource_type" "any_name" {
+*    default = true
+* }
+* to pass the default value resource_type.any_name.what we want
+#### example
+* data "aws_vpc" "default" {
+*    default = true
+* }
+* to pass the default value aws_vpc.default.id
