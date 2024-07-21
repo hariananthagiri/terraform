@@ -11,6 +11,18 @@
 #### create internet gateway
 * create internet gateway and attach it with vpc
 * for internet gateway we use cidr "0.0.0.0/0"
+#### create NAT gateway
+* it stands for Network Address Translator
+* it controls the outgoing traffic for our private subnet
+* any resource that present in private subnet should not have the access from outside  of our aws environment
+* sometimes those particular servers present inside our public subnet need to access the internet to get the updates
+* in this case NAT gatway is used to get the access to the internet to resources present in the private subnet
+* NAT gateway allows only outgoing traffic for private subnets incomeing traffic is not allowed here
+##### EIP
+* elastic ip
+* to setup NAT gateway we need to create a elastic ip
+* elastic ip means a fixed ip it wont change again and again
+* it is chargeble
 
 #### create subnets by attaching with our vpc
 * create public subnet with cidr "10.0.1.0/24"
