@@ -17,6 +17,7 @@ resource "aws_route" "private_route" {
 
 
 # to use this syntax we have to create internet gateway, or NAT gateway, or vpc peering it is MANDATORY
+# otherwise use only upto route_table_id vdont give denstination and gateway_id
 # if you want to create route without createing internet gateway, or NAT gateway, or vpc peering
 # use syntax route used in route_table 
 # route {
