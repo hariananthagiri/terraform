@@ -3,5 +3,5 @@
 * it use infrastructure as code
 * ansible is used as configureation as code (CAC)
 
-#### infrastructure creation ---------------> server creation
+#### infrastructure creation --------------->  server creation
 #### configuration management ---------------> server configuration
