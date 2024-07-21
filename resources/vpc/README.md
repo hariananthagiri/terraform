@@ -18,6 +18,8 @@
 * sometimes those particular servers present inside our public subnet need to access the internet to get the updates
 * in this case NAT gatway is used to get the access to the internet to resources present in the private subnet
 * NAT gateway allows only outgoing traffic for private subnets incomeing traffic is not allowed here
+##### note
+* NAT gateway should be created in public subnet because it has internet connectivity then we add it in the route_tables
 ##### EIP
 * elastic ip
 * to setup NAT gateway we need to create a elastic ip
