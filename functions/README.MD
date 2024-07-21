@@ -22,8 +22,9 @@
 # map
 ## functions used for mapping
 
-## lookup(map key)
+## lookup(map, "key")
 * by using map variable and key we can take the value
+* double quotes are mandatory
 
 ## merge()
 * we can use merge function to combine or merge "n" no.of mapping variables 
