@@ -49,11 +49,11 @@
 #### route_table associations
 * route table contains subnets
 * route_table plays key role in vpc
-* we are attaching subnets to route table by using route_table assosiation option as shown below
+* we are attaching one or more subnets to route_table by using route_table assosiation option as shown below
 ##### subnets ----> route_table ----> edit route_table assosiation ----> attach with our route_table
 * the above option can be achived by route_table also
-* attach public subnet to public route_table
-* attach private subnet to private route_table
+* attach public subnets to public route_table
+* attach private subnets to private route_table
 
 #### routes 
 ##### route_table ----> select a route_table ----> routes ----> edit routes ----> select destination cidr and target ----> add route

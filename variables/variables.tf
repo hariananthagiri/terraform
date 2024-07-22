@@ -24,3 +24,5 @@ variable "instance_names" {
 #   type = bool / false
 #   default = true # if you enter without giveing any value it comes under optional it wont give any syntax error
 # }
+# true = 1
+# faslse = 0

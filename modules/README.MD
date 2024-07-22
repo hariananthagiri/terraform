@@ -11,3 +11,6 @@
 * .. (double-dot) refers one step back
 * / it refer to root
 * ~ tilde refers to home directory 
+
+### NOTE
+#### WHEN WE ARE USING MODULES WE HAVE TO PASS THE VARIABLES AFTER DECLEREATION IN MODULE CODE

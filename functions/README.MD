@@ -33,6 +33,7 @@
 ### we use multipule functions in list 
 
 ## element(list, index)
+* for best practice give element(list, count.index) it gives one-by-one in loop
 * by using this we can retrive a single element from the list
 #### example:-  element(list, 2)
 * element(["a" "b" "c"], 1) o/p----> "b"  (i.e list start with 0, 1, 2)

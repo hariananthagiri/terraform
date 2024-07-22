@@ -31,3 +31,11 @@
 *    default = true
 * }
 * to pass the default value aws_vpc.default.id
+
+#### Availabulity_zones using data sources
+##### syntax
+* data "aws_availability_zones" "azs" {
+*  #all_availability_zones = true
+*  #state = "available"
+* }
+* to use availabulity zones values we use aws_availability_zones.azs.names it gives the names 

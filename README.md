@@ -5,3 +5,5 @@
 
 #### infrastructure creation --------------->  server creation
 #### configuration management ---------------> server configuration
+
+##### after running terraform apply and now doing changes in code  before editing anything in terraform distroy it first

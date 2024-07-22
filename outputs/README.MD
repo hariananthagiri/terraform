@@ -12,4 +12,14 @@
 * it display or disable the contaiant based on data
 ### example
 * aws_instance.web.public_ip, aws_instance.web.private_ip, aws_instance.web.id
-* basically we have to search in key = "value" in value we have to search for what we need like value.<what-we-required>
+* basically we have to search in key = "value" in value we have to search for what we need like value.attribute
+
+#### example
+* output "azs" {
+* value = data.aws_availability_zones.azs.names
+* }  
+ 
+##### where the value is stored
+* in the above example the value is stored in "azs" it is used to show the output in that value using output blocks
+* here the value is impartent because it stored everything if we want to use that value as input to other resource as variable we can use
+* 
