@@ -98,6 +98,15 @@
 * routes
 
 
+#### db_subnet_group
+* it is used to group all subnets related to database 
+* it is related to RDS 
+* it store dbs in RDS 
+
+
+
+
+
 
 
 
