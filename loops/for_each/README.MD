@@ -8,4 +8,32 @@
 * we will give saperate variable to declere key and value to store
 * variable_name = each.key, variable_name = each.value
 * this variable will store the key and value in ittrations.....
+# FOR_EACH NO.OF ITTRATION = NO.OF VARIABLES STORED
 # I STORE WHAT I WANT I USE WHERE I WANT 
+
+# declereing for_each
+* for_each variable_name
+* for_each local.sg_ingress_rules
+
+## decleretion of map variable
+* variable "variable_name" {
+*   type = map
+*   default = {
+*   variable_name1 = "value1"
+*   variable_name1 = "value1"
+*   }
+* }
+
+## decleretion of map variable in locals
+* locals {
+*  sg_ingress_rules = [
+*    {
+*    port = 443
+*    description = "ingress rule for port 443"
+*    },
+*    {
+*    port = 22
+*    description = "ingress rule for port 22",    
+*  }
+*  ]
+* }

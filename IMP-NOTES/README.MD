@@ -10,6 +10,8 @@
 * [ "10.0.1.0/16", "10.0.2.0/16" ]
 
 * port-number is list type []
-
+* security group is list type []
 * ami_id is string type
+
+* in two ways we can fetch the data to a variable by hardcodeing the data manualy and giveing data dynamically
 

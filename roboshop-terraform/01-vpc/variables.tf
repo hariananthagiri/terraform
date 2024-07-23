@@ -3,9 +3,9 @@ variable "vpc_cidr" {
 }
 variable "common_tags" {
   default = {
-    Project     = "roboshop"
+    Project = "roboshop"
     Environment = "dev"
-    Terraform   = "true"
+    Terraform = "true"
   }
 }
 
@@ -36,4 +36,3 @@ variable "database_subnets_cidr" {
 variable "is_peering_required" {
   default = true
 }
-

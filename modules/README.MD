@@ -1,6 +1,7 @@
 # MODULES
 * modules are completely depends on DRY prinsiple
 * CODE REUSE no need to write infra for every project from the scrach
+* "main.tf" is a parent file 
 ## SYNTAX
 * module "module-name" {
 *    source = "../give/path"
