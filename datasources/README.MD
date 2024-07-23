@@ -1,5 +1,5 @@
 # DATASOURCES
-* it contains a keyword data
+* it contains a keyword data it is used to read the data 
 * in two ways we can fetch the data to a variable by hardcodeing the data manualy and giveing data dynamically
 * datasource is used to fetch the data dynamically
 * datasources fetch the data genrally from outside the terraform

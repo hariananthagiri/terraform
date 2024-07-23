@@ -1,4 +1,6 @@
 * if you want any value to be fetch just store the value in a variable loop it and give it where you want
+* in two ways we can fetch the data to a variable by hardcodeing the data manualy and giveing data dynamically
+
 #### example
 * Availabulity_zones = [ "us-east-1a", "us-east-1b", "us-east-1c" ]
 
