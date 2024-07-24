@@ -34,6 +34,9 @@ the the total value of aws_vpc.main.id is stored in "aws_vpc"
 output "vpc_id" {
     value = aws_vpc.main.id
 }
+* in above example to use the value stored first wev have to output the roboshop module if not it wont give the value as shown below
+* if we wont output the vpc_id vale in main folder if we wont output the main folder we cannot get the value
+* to refer that value in module folder we use module.roboshop.vpc_id
 * here vpc_id is output block name
 
 #### module file

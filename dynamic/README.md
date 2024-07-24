@@ -1,5 +1,6 @@
 # dynamic_block
 * to pass an value dynamically we use it
+* a particular block inside the resource configuration is getting repeated then we use dynamic block
 
 ## syntax
 * dynamic "ingress" {
@@ -19,6 +20,20 @@
 ### dynamic block declaretion dynamic "name" { CONTENT { GIVE CONTENT } }
 #### name.value.key
 #### in map values stored like KEY = VALUE
+
+##### we declere it in variables
+* variable "sg_ingress_rules" {
+*  default = [
+*    {
+*    port = 443
+*    description = "ingress rule for port 443"
+*    },
+*    {
+*    port = 22
+*    description = "ingress rule for port 22",    
+*  }
+*  ]
+* }
 
 ##### for best practice we declere it in locals
 * locals {

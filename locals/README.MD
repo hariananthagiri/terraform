@@ -4,7 +4,7 @@
 * it has its disadvantage its readabulity is missing
 # syntax
 * locals {
-*   name="store what you want to store"
+*   name="store what you want to store (i.e VALUE)"
 * }
 * to declere we use local.name
 ## lookup

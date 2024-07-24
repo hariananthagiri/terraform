@@ -7,9 +7,9 @@ variable "instance_type" {
   default = "t2.micro"
 }
 # declereing map variable
-variable "instance_name" {
-  type = map(any)
+variable "tags" {
+  type = map
   default = {
-    Name = "terraform"
+    name = "terraform"
   }
 }

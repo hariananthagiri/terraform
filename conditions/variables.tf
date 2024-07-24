@@ -1,11 +1,11 @@
 variable "ami_id" {
-  type = string
+  type    = string
   default = "ami-0b4f379183e5706b9"
 }
 
 variable "instance_names" {
-  type = map
-    default = {
+  type = map(any)
+  default = {
     Name = "mongodb"
   }
 }

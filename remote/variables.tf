@@ -1,21 +1,21 @@
 variable "ami_id" {
-  type = string
+  type    = string
   default = "ami-0b4f379183e5706b9"
 }
 variable "instance_type" {
-  type = string
+  type    = string
   default = "t2.micro"
 }
 # declereing map variable
 variable "tags" {
-  type = map
+  type = map(any)
   default = {
-  name = "terraform"
+    name = "terraform"
   }
 }
 # declereing list variable
 variable "instance_names" {
-  type = list
+  type    = list(any)
   default = [] # if you enter without giveing any value it comes under optional it wont give any syntax error
 }
 # declereing boolan variable

@@ -8,7 +8,7 @@ terraform {
   backend "s3" {
     bucket = "ananthagiri-remote-state"
     # key    = "give/path/to/store_tfstate_file"
-    key            = "dynamic"
+    key            = "ssm"
     region         = "us-east-1"
     dynamodb_table = "ananthagiri-locking"
   }
