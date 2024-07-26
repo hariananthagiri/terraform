@@ -1,5 +1,5 @@
 resource "aws_security_group" "roboshop-all" { 
-    name        = "terraform_sg 'for our reference'"   # aws security group name 
+    name        = "terraform_sg 'for our reference'"   # aws security group name  ixed
     description = "createing a security group from terraform"
 
     ingress {
@@ -26,6 +26,6 @@ resource "aws_security_group" "roboshop-all" {
     }
 
     tags = {
-        Name = "terraform_sg"  # aws security group name 
+        Name = "terraform_sg"  # aws security group name it can be editable
     }
 }

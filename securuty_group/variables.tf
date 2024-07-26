@@ -1,15 +1,14 @@
-variable "ami_id" {
-  type    = string
-  default = "ami-0b4f379183e5706b9"
+variable "sg_name" {
+  type = string
+  default = ""
 }
-variable "instance_type" {
-  type    = string
-  default = "t2.micro"
+
+variable "vpc_id" {
+  type = string
+  default = ""
 }
-# declereing map variable
-variable "instance_name" {
-  type = map(any)
-  default = {
-    Name = "terraform"
-  }
+
+variable "sg_description" {
+  type = string
+  default = ""
 }

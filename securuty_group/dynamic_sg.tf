@@ -1,6 +1,7 @@
 resource "aws_security_group" "roboshop-all" {
-  name        = "terraform_sg" # aws security group name 
-  description = "createing a security group from terraform"
+  name        = var.sg_name # aws security group name 
+  description = var.sg_description
+  vpc_id = var.vpc_id
 
   dynamic "ingress" {
     for_each = local.sg_ingress_rules

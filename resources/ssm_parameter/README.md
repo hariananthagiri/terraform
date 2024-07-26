@@ -20,6 +20,11 @@
 #### syntax
 * data "ssm_parameter" "vpc_id" {
 *    value = /${var.project_name}/${var.environment}/vpc_id
+*    over_write = true  
 * }
+* by using over_write optrion we can avide duplicates
 #### to use the value stored in ssm_parameter
 * data.ssm_parameter.vpc_id.value
+* to use datasource option first ssm_parameter need to store the value
+
+##### the value is stored in ssm_parameter in sensitive_value we can't see it.

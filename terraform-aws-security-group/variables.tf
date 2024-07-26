@@ -9,11 +9,11 @@ variable "sg_name" {
 }
 variable "common_tags" {
   default = {}
-  type    = map(any)
+  type    = map
 }
 variable "sg_tags" {
   default = {}
-  type    = map(any)
+  type    = map
 }
 variable "vpc_id" {
 
@@ -22,7 +22,7 @@ variable "sg_description" {
   #default = ""
   type = string
 }
-variable "sg_ingress_rules" {
-  type    = list(any)
+variable "mongodb_sg_ingress_rules" {
+  type    = list
   default = []
 }

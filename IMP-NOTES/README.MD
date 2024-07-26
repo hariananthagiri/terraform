@@ -17,3 +17,6 @@
 
 * in two ways we can fetch the data to a variable by hardcodeing the data manualy and giveing data dynamically
 
+* if we are in same folder we can apply anything you will have access
+* onece you cross the folder you will loss the access it is called as different project 
+
