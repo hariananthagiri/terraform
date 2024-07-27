@@ -17,6 +17,9 @@
 
 * in two ways we can fetch the data to a variable by hardcodeing the data manualy and giveing data dynamically
 
+#### note
 * if we are in same folder we can apply anything you will have access
 * onece you cross the folder you will loss the access it is called as different project 
 
+#### note
+* when we use StringList type it must be a cama sapareted value otherwise it through an error use  join function to do it join(",", list)

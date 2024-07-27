@@ -71,6 +71,7 @@
 *   protocol                 = "tcp"
 *   security_group_id        = module.mongodb.sg_id   (main sg id)
 * }
+###### we can create n no of connection like above just like we create for ingress rules
 
-#### instad of directly giveing ingress egress rules like above and  we can create ingress egress rules and  attach to want ever instance we and as shown above
+#### instad of directly giveing ip_address we will can create a sg and attach to another sg and it allow the tyraffic from the instance if attached sg ias connected to it 
 
