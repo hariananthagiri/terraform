@@ -14,3 +14,14 @@
 #### file("script.sh") 
 * it will execute whatever is there in file
 ##### "double qutations are mandatory"
+
+
+##### user_data stored in..?
+* to see the user_data stored in fallow the fallowing steps
+* to see it we have to take sudo access sudo su -
+* then open cd var/log
+* run ls -l command there you can see a folder named as "cloudinit.log"
+* to see them run the below command to see log files only last 10 logs
+* tail -f "cloudinit.log"
+* we can achive by using below command also it show complete logs 
+* less cloudinit.log

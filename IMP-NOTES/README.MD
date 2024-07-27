@@ -16,6 +16,7 @@
 * ami_id is string type
 
 * in two ways we can fetch the data to a variable by hardcodeing the data manualy and giveing data dynamically
+* records in route53 are list type
 
 #### note
 * if we are in same folder we can apply anything you will have access

@@ -6,12 +6,21 @@
 * what ports need to allow 
 * we can give n no.of ingress values one by one
 * while createing sg vpc_id is very importent
-
+* genrally port values  taks as range from = 1  to = 10 now it accept from 1 to 10 (1,2,3,....10) 
+* to avide range we have to same value for from and to ports like from = 1  to = 1 now it accept connection from only port no 1
 #### syntax
+###  ingress
 * ingress {
 *        description      = "Allow All ports"
 *        from_port        = 0
 *        to_port          = 0 
+*        protocol         = "tcp"
+*        cidr_blocks      = ["0.0.0.0/0"]
+*    }
+* ingress {
+*        description      = "Allow All ports"
+*        from_port        = 0
+*        to_port          = 65535
 *        protocol         = "tcp"
 *        cidr_blocks      = ["0.0.0.0/0"]
 *    }
@@ -23,7 +32,8 @@
 *        cidr_blocks      = ["0.0.0.0/0"]
 *    }
 
-* to allow all we will give from_port = 0 and to_port = 0
+* to allow all we will give from_port = 0 and to_port = 0 if it wont work give as below
+* to allow all we will give from_port = 0 and to_port = 65535
 
 ###  egress
 * it is nothing but outgoing traffic

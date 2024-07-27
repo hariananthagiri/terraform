@@ -76,3 +76,5 @@
 # for best practice use interpolation in functions
 ### "${functions+variables+special charectors}"
 
+#### file("file_name")
+* we can save the requied script in a file and we can use where we want by using above function
