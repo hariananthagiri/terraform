@@ -1,6 +1,9 @@
 # DATASOURCES
+* it contains a keyword data it is used to read the data 
 * We can qurey the resouses dynamically by using datasources
 * datasources allows the terraform to use the information from outside of the terraform
+* data sources are used to read the information of existing resource created by the user and provider 
+* datasources are mostly used to query the data there in providers and query the data in existing resources 
 ### syntax
 * data "aws_ami" "name of the datasources" {
 * write the information related to resourse  using filters, names, value = [] 
@@ -36,6 +39,8 @@
 ##### syntax
 * data "aws_availability_zones" "azs" {
 *  #all_availability_zones = true
+*  #availability_zone = us-east-1a
 *  #state = "available"
+*  #most_recent = true
 * }
 * to use availabulity zones values we use aws_availability_zones.azs.names it gives the names 
