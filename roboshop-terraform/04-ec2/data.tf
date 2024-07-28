@@ -77,7 +77,7 @@ data "aws_ami" "centos8"{
   
 }
 
-# data "aws_ssm_parameter" "vpn_sg_id" {
-#   name = "/${var.project_name}/${var.environment}/vpn_sg_id"
-# }
+data "aws_ssm_parameter" "vpn_sg_id" {
+  name = "/${var.project_name}/${var.environment}/vpn_sg_id"
+}
 

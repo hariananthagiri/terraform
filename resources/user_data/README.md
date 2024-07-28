@@ -25,3 +25,5 @@
 * tail -f "cloudinit.log"
 * we can achive by using below command also it show complete logs 
 * less cloudinit.log
+
+#### if user_data is failed once it wont work again 
