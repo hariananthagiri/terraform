@@ -2,6 +2,7 @@
 * it is used to maintain fire wall and mangeing incomeing and outgoing traffic
 ### ingress
 * it is nothing but allowing incomeing traffic
+* without ingress rules we cant open instanceses allocate requied instances
 * who can access our instance 
 * what ports need to allow 
 * we can give n no.of ingress values one by one
@@ -14,14 +15,14 @@
 *        description      = "Allow All ports"
 *        from_port        = 0
 *        to_port          = 0 
-*        protocol         = "tcp"
+*        protocol         = "-1"
 *        cidr_blocks      = ["0.0.0.0/0"]
 *    }
 * ingress {
 *        description      = "Allow All ports"
 *        from_port        = 0
 *        to_port          = 65535
-*        protocol         = "tcp"
+*        protocol         = "-1"
 *        cidr_blocks      = ["0.0.0.0/0"]
 *    }
 * ingress {
@@ -34,6 +35,9 @@
 
 * to allow all we will give from_port = 0 and to_port = 0 if it wont work give as below
 * to allow all we will give from_port = 0 and to_port = 65535
+* cidr_blocks = ["0.0.0.0/0"] #ideally your home public IP address, but it frequently changes 
+* protocol="-1" to allow all ports
+
 
 ###  egress
 * it is nothing but outgoing traffic

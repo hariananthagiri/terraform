@@ -17,3 +17,8 @@ output "route_table_id" {
 }
 
 
+# to read ami_id
+
+output "ami_id" {
+  value = data.aws_ami.centos8
+}
