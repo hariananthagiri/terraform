@@ -8,10 +8,10 @@
 *    variable = "value"
 * }
 ### some special charectors in linux
-* . (dot) referes current folder
-* .. (double-dot) refers one step back
-* / it refer to root
-* ~ tilde refers to home directory 
+* . (dot)         ----> current folder
+* .. (double-dot) ----> parent folder
+* /               ----> it refer to root
+* ~ (tilde)       ----> home directory 
 
 ### NOTE
 #### WHEN WE ARE USING MODULES WE HAVE TO PASS THE VARIABLES AFTER DECLEREATION IN MODULE CODE IT IS MANDATORY
