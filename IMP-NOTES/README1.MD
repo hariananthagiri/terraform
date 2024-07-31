@@ -6,10 +6,11 @@
 write code 
 
 ```
-* if you want to make text bolt write the word between two *  
-* if you want to use link **[text](url)**
+* if you want to make text bolt write the word between two *
+   *  `` **word** ``
+* if you want to use link 
    *  ``` [text](url) ```
-* if u want to use image **![text](url)**
+* if u want to use image 
    *  ```![text](url) ```
 * if you want to use numbers directly give numbers
 1.
