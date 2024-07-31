@@ -25,22 +25,28 @@
 ### default values
 * by using data-sources we can pass default values as shown below
 #### syntax
-* data "resource_type" "any_name" {
-*    default = true
-* }
+``` terraform
+data "resource_type" "any_name" {
+   default = true
+}
+ ```
 * to pass the default value resource_type.any_name.attribute
 #### example
-* data "aws_vpc" "default" {
-*    default = true
-* }
+```terraform
+data "aws_vpc" "default" {
+    default = true
+}
+```
 * to pass the default value aws_vpc.default.id
 
 #### Availabulity_zones using data sources
 ##### syntax
-* data "aws_availability_zones" "azs" {
-*  #all_availability_zones = true
-*  #availability_zone = us-east-1a
-*  #state = "available"
-*  #most_recent = true
-* }
+```terraform
+ data "aws_availability_zones" "azs" {
+  #all_availability_zones = true
+  #availability_zone = us-east-1a
+  #state = "available"
+  #most_recent = true
+}
+```
 * to use availabulity zones values we use aws_availability_zones.azs.names it gives the names 
