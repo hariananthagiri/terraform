@@ -20,11 +20,13 @@
 * terraform wont allow all attributes to change
 
 #### syntax
-* resource "aws_instance" "web" { 
-*   lifecycle {
+```terraform
+resource "aws_instance" "web" { 
+  lifecycle {
    # ignore_changes = [ all ] # it will ignore all attributes
    # ignore_changes = [ give list of attribute ] 
    # create_before_destroy = false
    # prevent_destroy = true 
-*  }
-* }
+  }
+}
+```

@@ -3,7 +3,9 @@
 * it will be created by using terraform command
 
 ## syntax
-* resource "local_file" "file_name" {     
-*  filename = "path/and/file"
-*  content = "what to there in file"
-* }
+```terraform
+resource "local_file" "file_name" {     
+  filename = "path/and/file"
+  content = "what to there in file"
+}
+```
