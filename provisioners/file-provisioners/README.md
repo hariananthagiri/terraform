@@ -11,11 +11,13 @@
 ### connections block 
 * it is used to connect the remote server where we are transfering the file
 #### syntax
-* connection {
-*    type     = "ssh"
-*    user     = "centos"
-*    password = "DevOps321"
-*    host     = self.public_ip   # self = aws_instance.web
-*  }
+```terraform
+connection {
+   type     = "ssh"
+   user     = "centos"
+   password = "DevOps321"
+   host     = self.public_ip   # self = aws_instance.web
+}
+```
 
 ##### "DOUBLE QUTATIONS ARE MANDATORY TO RUN COMMANDS" 

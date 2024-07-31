@@ -10,10 +10,11 @@
 * on_failure = continue / fail
 
 #### syntax
-* provisioner "local-exec" {
-* command = touch hari.txt
-* when = destroy
-* on_failure = continue / fail
-*  }
-
+```terraform
+provisioner "local-exec" {
+    command = touch hari.txt
+    when = destroy
+    on_failure = continue / fail
+}
+```
 ##### "DOUBLE QUTATIONS ARE MANDATORY TO RUN COMMANDS" 
