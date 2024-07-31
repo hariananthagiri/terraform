@@ -10,9 +10,10 @@
 
 ### default
 * we can use default value by giveing default = true as shown below
-
-* data "aws_vpc" "default" {
-*    default = "true"
-* }
+```terraform
+data "aws_vpc" "default" {
+    default = "true"
+}
+```
     
-    
+ 
