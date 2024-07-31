@@ -17,15 +17,27 @@
 * we can use "n" no.of filters in datasources
 * filter is used to give more information about resources where we are featching the data
 #### syntax
-* filter {
-*     name   = "name"
-*     values = ["Centos-8-DevOps-Practice"]
-* }
+```terraform
+filter {
+    name   = "name"
+    values = ["Centos-8-DevOps-Practice"]
+  }
+
+  filter {
+    name   = "root-device-type"
+    values = ["ebs"]
+  }
+
+  filter {
+    name   = "virtualization-type"
+    values = ["hvm"]
+}
+```
 
 ### default values
 * by using data-sources we can pass default values as shown below
 #### syntax
-``` terraform
+```terraform
 data "resource_type" "any_name" {
    default = true
 }
@@ -42,7 +54,7 @@ data "aws_vpc" "default" {
 #### Availabulity_zones using data sources
 ##### syntax
 ```terraform
- data "aws_availability_zones" "azs" {
+data "aws_availability_zones" "azs" {
   #all_availability_zones = true
   #availability_zone = us-east-1a
   #state = "available"
