@@ -2,9 +2,10 @@
 * MD is **MARKDOWN**
 * for headings use # we can go up to 6 #
 * to highlight the syntax use 3 back tick (```)
-``` mention its code name
-write code 
-
+```
+* ``` mention its code name
+* write code 
+* ```
 ```
 * if you want to make text bolt write the word between two *
    *  `` **word** ``
