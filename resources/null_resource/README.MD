@@ -14,7 +14,7 @@
 * whenever you execute the null resource for first time but whenever you try to execute the same null resource for second time then it will  not exexute 
 * to avide this we use trigger
 ### SYNTAX
-''' terraform
+``` terraform
 resource "null_resource" "null" {
   triggers = {
     id = aws_instance.web.id  # *** if value is changed ***
@@ -23,5 +23,4 @@ resource "null_resource" "null" {
     command = "echo hello world" 
   }
 }
-...
-'''
+```
