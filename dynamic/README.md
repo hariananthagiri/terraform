@@ -40,19 +40,20 @@ variable "sg_ingress_rules" {
 ```
 
 ##### for best practice we declere it in locals
-* locals {
-*  sg_ingress_rules = [
-*    {
-*    port = 443
-*    description = "ingress rule for port 443"
-*    },
-*    {
-*    port = 22
-*    description = "ingress rule for port 22",    
-*  }
-*  ]
-* }
-
+```terraform
+locals {
+  sg_ingress_rules = [
+    {
+    port = 443
+    description = "ingress rule for port 443"
+    },
+    {
+    port = 22
+    description = "ingress rule for port 22",    
+    }
+  ]
+}
+```
 #### NOTE
 * security_group is list type
 * FOR_EACH NO.OF ITTRATION = NO.OF VARIABLES STORED
