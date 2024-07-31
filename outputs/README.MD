@@ -10,14 +10,23 @@
 * if we want to show anything to enduser then defietly we have to use output blocks
 ### senstive = true/false
 * it display or disable the contaiant based on data
+#### syntax
+```terraform
+output "azs" {
+value = aws_instance.web.id
+}  
+```
 ### example
 * aws_instance.web.public_ip, aws_instance.web.private_ip, aws_instance.web.id
 * basically we have to search in key = "value" in value we have to search for what we need like value.attribute
 
 #### example
-* output "azs" {
-* value = data.aws_availability_zones.azs.names
-* }  
+
+```terraform
+output "azs" {
+value = data.aws_availability_zones.azs.names
+}  
+```
  
 ##### where the value is stored
 * in the above example the value is stored in "azs" it is used to show the output in that value using output blocks

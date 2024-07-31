@@ -16,24 +16,28 @@
 * for_each local.sg_ingress_rules
 
 ## decleretion of map variable
-* variable "variable_name" {
-*   type = map
-*   default = {
-*   variable_name1 = "value1"
-*   variable_name1 = "value1"
-*   }
-* }
+```terraform
+variable "variable_name" {
+  type = map
+  default = {
+  variable_name1 = "value1"
+  variable_name1 = "value1"
+  }
+}
+```
 
 ## decleretion of map variable in locals
-* locals {
-*  sg_ingress_rules = [
-*    {
-*    port = 443
-*    description = "ingress rule for port 443"
-*    },
-*    {
-*    port = 22
-*    description = "ingress rule for port 22",    
-*  }
-*  ]
-* }
+```terraform
+locals {
+  sg_ingress_rules = [
+   {
+   port = 443
+   description = "ingress rule for port 443"
+   },
+   {
+   port = 22
+   description = "ingress rule for port 22",    
+    }
+  ]
+}
+```
