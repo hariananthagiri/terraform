@@ -11,27 +11,30 @@
 * to avide range we have to same value for from and to ports like from = 1  to = 1 now it accept connection from only port no 1
 #### syntax
 ###  ingress
-* ingress {
-*        description      = "Allow All ports"
-*        from_port        = 0
-*        to_port          = 0 
-*        protocol         = "-1"
-*        cidr_blocks      = ["0.0.0.0/0"]
-*    }
-* ingress {
-*        description      = "Allow All ports"
-*        from_port        = 0
-*        to_port          = 65535
-*        protocol         = "-1"
-*        cidr_blocks      = ["0.0.0.0/0"]
-*    }
-* ingress {
-*        description      = "Allow All ports"
-*        from_port        = 22 #allowing ssh protocol
-*        to_port          = 22
-*        protocol         = "tcp"
-*        cidr_blocks      = ["0.0.0.0/0"]
-*    }
+
+```terraform
+ingress {
+       description      = "Allow All ports"
+       from_port        = 0
+       to_port          = 0 
+       protocol         = "-1"
+       cidr_blocks      = ["0.0.0.0/0"]
+   }
+ingress {
+       description      = "Allow All ports"
+       from_port        = 0
+       to_port          = 65535
+       protocol         = "-1"
+       cidr_blocks      = ["0.0.0.0/0"]
+   }
+ingress {
+       description      = "Allow All ports"
+       from_port        = 22 #allowing ssh protocol
+       to_port          = 22
+       protocol         = "tcp"
+       cidr_blocks      = ["0.0.0.0/0"]
+   }
+```
 
 * to allow all we will give from_port = 0 and to_port = 0 if it wont work give as below
 * to allow all we will give from_port = 0 and to_port = 65535
@@ -46,13 +49,15 @@
 * genrelly we wont change egress it is fixed
 
 #### syntax
-* egress {
-*        from_port        = 0
-*        to_port          = 0
-*        protocol         = "-1"
-*        cidr_blocks      = ["0.0.0.0/0"]
-*    }
 
+```terraform
+egress {
+       from_port        = 0
+       to_port          = 0
+       protocol         = "-1"
+       cidr_blocks      = ["0.0.0.0/0"]
+   }
+```
 * to attach our created security group to ec2 instance by below way
 ####   vpc_security_group_ids = [aws_security_group.roboshop-all.id]  # to attach created security group to our instance
 
@@ -77,14 +82,16 @@
 * to do this we have a resource devloped by aws
 ##### syntax
 # #mongodb accepting connections from catalogue instance
-* resource "aws_security_group_rule" "mongodb_catalogue" {
-*   source_security_group_id = module.catalogue.sg_id (attaching sg id)
-*   type                     = "ingress"
-*   from_port                = 27017
-*   to_port                  = 27017
-*   protocol                 = "tcp"
-*   security_group_id        = module.mongodb.sg_id   (main sg id)
-* }
+```terraform
+resource "aws_security_group_rule" "mongodb_catalogue" {
+  source_security_group_id = module.catalogue.sg_id (attaching sg id)
+  type                     = "ingress"
+  from_port                = 27017
+  to_port                  = 27017
+  protocol                 = "tcp"
+  security_group_id        = module.mongodb.sg_id   (main sg id)
+}
+```
 ###### we can create n no of connection like above just like we create for ingress rules
 
 #### instad of directly giveing ip_address we will can create a sg and attach to another sg and it allow the tyraffic from the instance if attached sg ias connected to it 

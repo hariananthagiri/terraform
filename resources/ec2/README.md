@@ -11,13 +11,15 @@
 
 
 ### syntax
-* resource "resouce_type" "resource_name" {     # terraform reference name
-*  ami           = var.ami_id 
-*  instance_type = var.instance_type
-* #attribute = value
-* #arguments
-*  tags = var.tags # aws instance name
-* }
+```terraform
+resource "resouce_type" "resource_name" {     # terraform reference name
+ ami           = var.ami_id 
+ instance_type = var.instance_type
+#attribute = value
+#arguments
+ tags = var.tags # aws instance name
+}
+```
  
 #### resouce_type
 * it refers what type of resource you want to create 

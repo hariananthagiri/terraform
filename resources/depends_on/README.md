@@ -11,7 +11,9 @@ depends_on = [
 ### example
 * we are createing two instances instance-a and instance-b
 * iam giveing 
-* depends_on = [ 
-*   aws_instance.instance-b
-*   ]
+```terraform
+depends_on = [ 
+  aws_instance.instance-b
+]
+```
 #### now first instance-b is created then instance-a is created

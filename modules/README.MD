@@ -3,10 +3,12 @@
 * CODE REUSE no need to write infra for every project from the scrach
 * "main.tf" is a parent file 
 ## SYNTAX
-* module "module-name" {
-*    source = "../give/path"
-*    variable = "value"
-* }
+```terraform
+module "module-name" {
+   source = "../give/path"
+   variable = "value"
+}
+```
 ### some special charectors in linux
 * . (dot)         ----> current folder
 * .. (double-dot) ----> parent folder
@@ -31,9 +33,11 @@ the the total value of aws_vpc.main.id is stored in "aws_vpc"
 2. module folder 
 #### main file
 ##### in main folder or file we store the value with output bloks
+```terraform
 output "vpc_id" {
     value = aws_vpc.main.id
 }
+```
 * in above example to use the value stored first wev have to output the roboshop module if not it wont give the value as shown below
 * if we wont output the vpc_id vale in main folder if we wont output the main folder we cannot get the value
 * to refer that value in module folder we use module.roboshop.vpc_id

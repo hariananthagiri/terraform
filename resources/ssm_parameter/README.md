@@ -9,19 +9,25 @@
 * but datasource wont give the data of presently creating resource 
 * to avide this we mostly use ssm_parameter store
 #### syntax
-* resource "aws_ssm_parameter" "vpc_id" {
-*   name = "/${var.project_name}/${var.environment}/vpc_id"
-*   type = "String"  # "S" must be capital and in quotes
-*   value = module.roboshop.vpc_id
-* }
+
+```terraform
+resource "aws_ssm_parameter" "vpc_id" {
+  name = "/${var.project_name}/${var.environment}/vpc_id"
+  type = "String"  # "S" must be capital and in quotes
+  value = module.roboshop.vpc_id
+}
+```
 
 #### NOTE
 * to read the created ssm_parameter we use database as shown in below
 #### syntax
-* data "ssm_parameter" "vpc_id" {
-*    value = /${var.project_name}/${var.environment}/vpc_id
-*    over_write = true  
-* }
+
+```terraform
+data "ssm_parameter" "vpc_id" {
+   value = /${var.project_name}/${var.environment}/vpc_id
+   over_write = true  
+}
+```
 * by using over_write optrion we can avide duplicates
 #### to use the value stored in ssm_parameter
 * data.ssm_parameter.vpc_id.value

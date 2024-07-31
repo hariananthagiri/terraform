@@ -3,8 +3,11 @@
 * it is used to installing the pckages while installing instances
 * we can run commands while installing the instances
 ### syntax
-* user_data = file("file_name")
-
+```terraform
+resource "aws_instance" "web" {
+  user_data = file("file_name")
+}
+```
 # file("file_name")
 * you have to give the file_name in double quotes it is mandatory
 * the above function is used to give the information stored in the file

@@ -3,9 +3,11 @@
 * it make it look good we use locals in pgm 
 * it has its disadvantage its readabulity is missing
 # syntax
-* locals {
-*   name="store what you want to store (i.e VALUE)"
-* }
+```terraform
+locals {
+  name="store what you want to store (i.e VALUE)"
+}
+```
 * to declere we use local.name
 ## lookup
 * lookup function is used to extract value from a key using variable_name
