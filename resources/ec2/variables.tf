@@ -10,7 +10,7 @@ variable "instance_type" {
 variable "tags" {
   type = map
   default = {
-  name = "terraform"
+    Name = "terraform"
   }
 }
 # declereing list variable
