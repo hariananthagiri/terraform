@@ -22,3 +22,9 @@ output "route_table_id" {
 output "ami_id" {
   value = data.aws_ami.centos8
 }
+
+# to select particular variable in group of map
+
+output "var_name" {
+  value = var.tags.name
+}

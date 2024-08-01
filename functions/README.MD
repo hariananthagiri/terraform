@@ -78,3 +78,5 @@
 
 #### file("file_name")
 * we can save the requied script in a file and we can use where we want by using above function
+#### formatedate(YYYY-MM-DD-hh-mm-ss, timestamp())
+* this function is used to store the current date with whatever formate we want

@@ -14,6 +14,7 @@
 * port-number is list type []
 * security group is list type []
 * ami_id is string type
+* records in route53 is list type []
 
 * in two ways we can fetch the data to a variable by hardcodeing the data manualy and giveing data dynamically
 * records in route53 are list type
