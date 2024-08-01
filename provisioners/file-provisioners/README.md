@@ -12,11 +12,17 @@
 * it is used to connect the remote server where we are transfering the file
 #### syntax
 ```terraform
-connection {
-   type     = "ssh"
-   user     = "centos"
-   password = "DevOps321"
-   host     = self.public_ip   # self = aws_instance.web
+resource "aws_instance" "web" {
+   provisioner "file" {
+      source = "README.md"
+      destination = "/home/centos/README.md"
+   }
+   connection {
+      type     = "ssh"
+      user     = "centos"
+      password = "DevOps321"
+      host     = self.public_ip   # self = aws_instance.web
+   }
 }
 ```
 
