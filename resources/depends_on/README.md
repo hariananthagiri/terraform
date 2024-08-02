@@ -1,11 +1,16 @@
 # depends_on
 * it is used to create a dependency between two resources
 * if you want some resources to be created before any other resource we use this
+* it is used in the resource block
 
 ## syntax
-depends_on = [ 
-    aws_s3_bucket.s3_bucket_tf
-   ]
+```terraform
+resource "aws_instance" "web" {
+  depends_on = [ 
+      aws_s3_bucket.s3_bucket_tf
+  ]
+}
+```
 * it is declered in squre brakets [resource_name]
 
 ### example
