@@ -7,6 +7,8 @@
 * write code 
 * ```
 ```
+* if you want to write in new line use *
+   *  `` * new line ``
 * if you want to make text bolt write the word between two *
    *  `` **word** ``
 * if you want to use link 
