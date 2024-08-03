@@ -14,8 +14,14 @@
 * if you want to use link 
    *  ``` [text](URL) ```
 * if u want to use image 
-   *  ```![text](image.jpg) ```
+   *  ```![text](URL-to-image) ```
+   * if u want to use image by useing path
+   *  ```![text](relative/path/of/image) ```
+* if u want to use emoji 
+   *  ```:EMOJIMODE: ```
 * if you want to use numbers directly give numbers
 1.
 2.
 3.
+
+
