@@ -14,10 +14,11 @@
 
 
 ## HTTP status codes
-* 100 TO 199 INFORMATION
-* sucess 
-*    **200 to 299 sucess**
-*    **300 to 399 redirect/temp**
-* failure
-*    **400 to 499 client side error**
-*    **500 to 599 server side erro purely project side errorr**
+* **INFORMATION**
+    * ***100 TO 199 Information***
+* **SUCCESS*** 
+    * ***200 to 299 success***
+    * ***300 to 399 redirect/temp***
+* **FAILURE**
+    * ***400 to 499 client side error***
+    * ***500 to 599 server side erro purely project side errorr***    
