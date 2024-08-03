@@ -34,7 +34,7 @@
 * to lock the un lock the locked state file
     **terraform force-unlock**
 * to import the existing infrastucture  
-    **terraform import <state-file> <instace-id>**
+    **terraform import state-file instace-id**
 
 
 

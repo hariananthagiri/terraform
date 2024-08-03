@@ -28,8 +28,8 @@
 
 * impartent commands 
 * by using url it gives the information about name of **URL** and its **ip-address**
-    **nslookup <URL>**
+    **nslookup URL**
 * to connect to onther **ip-address** from different **server**
-    **telnet ip-address port-number**
+    **telnet destination-ip-address port-number**
 #### note
  * when we are giveing priority in auto scalling, listenor rule supply priority by using variable only with different priority value  if not it through an error
