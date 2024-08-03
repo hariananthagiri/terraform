@@ -16,7 +16,7 @@ module "module-name" {
 * ~ (tilde)       ----> home directory 
 
 ### NOTE
-#### WHEN WE ARE USING MODULES WE HAVE TO PASS THE VARIABLES AFTER DECLEREATION IN MODULE CODE IT IS MANDATORY
+#### WHEN WE ARE USING MODULES EVEN IF U DECLERE VARIABLES IN VARIABLES.TF WE HAVE TO PASS THE VARIABLE VALUES IN MODULE FILE IT IS MANDATORY
 ### VALUES
 * the output values give in the module in the name of main file output block name
 #### main file iam takeing vpc_id value like
