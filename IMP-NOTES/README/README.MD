@@ -12,9 +12,9 @@
 * if you want to make text bolt write the word between two *
    *  `` **word** ``
 * if you want to use link 
-   *  ``` [text](url) ```
+   *  ``` [text](URL) ```
 * if u want to use image 
-   *  ```![text](url) ```
+   *  ```![text](image.jpg) ```
 * if you want to use numbers directly give numbers
 1.
 2.
