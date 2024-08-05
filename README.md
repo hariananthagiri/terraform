@@ -13,6 +13,8 @@
 
 * to inistialise terraform
     * **terraform init**
+* to backend configureation is changed in terraform
+    * **terraform init -reconfigure**
 * to see what is going to create and syntax errors
     * **terraform validate**
 * to check syntax errors

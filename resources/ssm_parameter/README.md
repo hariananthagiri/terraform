@@ -17,6 +17,8 @@ resource "aws_ssm_parameter" "vpc_id" {
   value = module.roboshop.vpc_id
 }
 ```
+### NOTE
+* when your using subnet_id in ssm_parameter give **type="StringList"**
 
 #### NOTE
 * to read the created ssm_parameter we use database as shown in below

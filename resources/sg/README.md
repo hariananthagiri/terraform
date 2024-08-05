@@ -81,7 +81,7 @@ egress {
  
 * to do this we have a resource devloped by aws
 ##### syntax
-# #mongodb accepting connections from catalogue instance
+# #mongodb accepting connections from catalogue instance 
 ```terraform
 resource "aws_security_group_rule" "mongodb_catalogue" {
   source_security_group_id = module.catalogue.sg_id (attaching sg id)
@@ -92,7 +92,12 @@ resource "aws_security_group_rule" "mongodb_catalogue" {
   security_group_id        = module.mongodb.sg_id   (main sg id)
 }
 ```
+### we are adding catalogue sg to mangodb sg in above 
 ###### we can create n no of connection like above just like we create for ingress rules
 
 #### instad of directly giveing ip_address we will can create a sg and attach to another sg and it allow the tyraffic from the instance if attached sg ias connected to it 
+
+#### note
+**whwn we are useing modules in security group use double quotes for variables**
+  * vpc_security_group_ids = ["var.sg1_id"]
 
