@@ -17,5 +17,5 @@ variable "create_instance" {
 }
 ```
 # condition
-**count=var.instance ? 1 : 0**
+**count=var.create_instance ? 1 : 0**
    * in above condition var.instance value if it is given true in default it will execute the condition if not it wont execute the condition..
