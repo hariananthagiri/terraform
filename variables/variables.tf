@@ -18,6 +18,7 @@ variable "instance_names" {
   type    = list(any)
   default = [] # if you enter without giveing any value it comes under optional it wont give any syntax error
   #default = [] # if you commented the default value user must provide a value if not it through an error
+  # use double quotes in list it is mandatory ["value"]
 }
 # declereing boolan variable
 # variable "instance_id" {

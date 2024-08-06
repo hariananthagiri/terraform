@@ -99,5 +99,5 @@ resource "aws_security_group_rule" "mongodb_catalogue" {
 
 #### note
 **whwn we are useing modules in security group use double quotes for variables**
-  * vpc_security_group_ids = ["var.sg1_id"]
+  * vpc_security_group_ids = ["var.sg_id"]
 

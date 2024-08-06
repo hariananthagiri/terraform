@@ -19,6 +19,14 @@ resource "aws_ssm_parameter" "vpc_id" {
 ```
 ### NOTE
 * when your using subnet_id in ssm_parameter give **type="StringList"**
+  * when we use **type="StringList"** use **join(",", local.public_subnet_ids)**
+### example
+```terraform
+resource "aws_ssm_parameter" "public_subnet_ids" {
+  name = "/${var.project_name}/${var.environment}/public_subnet_ids"
+  type = "StringList"  
+  value = join(",", local.public_subnet_ids)
+```
 
 #### NOTE
 * to read the created ssm_parameter we use database as shown in below
