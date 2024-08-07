@@ -28,3 +28,8 @@ output "ami_id" {
 output "var_name" {
   value = var.tags.name
 }
+
+# reading my_ip by using output_b;ock
+output "my_ip" {
+  value = data.http.my_ip
+}

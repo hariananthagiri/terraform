@@ -10,6 +10,20 @@
 * genrally port values  taks as range from = 1  to = 10 now it accept from 1 to 10 (1,2,3,....10) 
 * to avide range we have to same value for from and to ports like from = 1  to = 1 now it accept connection from only port no 1
 #### syntax
+```terraform
+resource "aws_security_group" "roboshop-all" { 
+    name        = "terraform_sg 'for our reference'"   # aws security group name  
+    description = "createing a security group from terraform"
+    ingress {
+      # rules
+    }
+    egress {
+      # rules
+    }
+}
+```
+
+
 ###  ingress
 
 ```terraform
@@ -81,7 +95,19 @@ egress {
  
 * to do this we have a resource devloped by aws
 ##### syntax
-# #mongodb accepting connections from catalogue instance 
+* adding inbound and outbound rules to a security_group
+```terraformr
+esource "aws_security_group_rule" "web1" {
+  type = "ingress"
+  protocol = "tcp"
+  from_port = 22
+  to_port = 22
+  cidr_blocks = ["0.0.0.0/0"]   # it will allow the internet acess from all internet sources
+  cidr_blocks = ["${chomp(data.http.my_ip)}/32"]   # it will allow the internet acess from only  my_ip address sources
+  security_group_id = module.sg1.sg_id 
+}
+```
+* attaching security_group to other security_group
 ```terraform
 resource "aws_security_group_rule" "mongodb_catalogue" {
   source_security_group_id = module.catalogue.sg_id (attaching sg id)
@@ -96,8 +122,3 @@ resource "aws_security_group_rule" "mongodb_catalogue" {
 ###### we can create n no of connection like above just like we create for ingress rules
 
 #### instad of directly giveing ip_address we will can create a sg and attach to another sg and it allow the tyraffic from the instance if attached sg ias connected to it 
-
-#### note
-**whwn we are useing modules in security group use double quotes for variables**
-  * vpc_security_group_ids = ["var.sg_id"]
-
