@@ -17,8 +17,8 @@
 * by using the starting value of prifix it take the element
 ### example
 * startswith("hello world" hello)
-
-
+## reverse()
+* to get the values in reverse order
 # map
 ## functions used for mapping
 

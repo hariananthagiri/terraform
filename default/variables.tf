@@ -1,6 +1,3 @@
-variable "tags" {
-  default = {
-    name = "hari krisha"
-    age = "26"
-  }
+variable "number" {
+  default = ["1", "2", "3", "4", "5"]
 }
