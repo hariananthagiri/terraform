@@ -29,3 +29,7 @@ variable "instance_type" {
    * variable_name[0], variable_name[1], variable_name[2], variable_name[3] ,variable_name[n-1]
 * if i need all values stored in list we use * as below
    * variable_name[*] it is mainly used in output blocks
+### note
+* reading the last element in a list **element(var.instance_type, length(var.instance_type)-1)**
+* to know the total elements stored in a list **length(var.instance_type)** it give total length 
+* length starts from 1, 2, 3, .... but list starts from 0, 1, 2, 3,....... so do -1
