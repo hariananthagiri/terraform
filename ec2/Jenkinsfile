@@ -23,7 +23,7 @@ pipeline {
             }
         }
         stage('plan') {
-             steps {
+            steps {
                 echo 'plan....'
                 sh"""
                     cd ec2
@@ -32,7 +32,7 @@ pipeline {
             }
         }  
         stage('apply') {
-             steps {
+            steps {
                 echo 'apply....'
                 sh"""
                     cd ec2
