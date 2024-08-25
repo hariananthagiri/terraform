@@ -7,10 +7,7 @@ pipeline {
     options {
         ansiColor('xterm')
     }
-    // parameters {
-    // string(name: 'Name', defaultValue: 'hari krishna', description: 'writeing my name')
-    // }
-    input{
+    input {
         message "should we continue?"
         ok "yes, we should." 
     }
