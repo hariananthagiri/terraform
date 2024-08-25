@@ -47,7 +47,7 @@ pipeline {
         //             cd ec2
         //         """
         //     }
-        }
+        // }
     }
     // post build
     post { 
