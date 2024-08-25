@@ -1,0 +1,64 @@
+pipeline {
+    agent { 
+        node { 
+            label 'AGENT-1' 
+        } 
+    }
+    options {
+        ansiColor('xterm')
+    }
+    // parameters {
+    // string(name: 'Name', defaultValue: 'hari krishna', description: 'writeing my name')
+    // }
+
+    // build
+    stages {
+        stage('init') {
+            steps {
+                echo 'init....'
+                sh"""
+                    cd ec2
+                    terraform init -reconfigure
+                """
+            }
+        }
+        stage('plan') {
+             steps {
+                echo 'plan....'
+                sh"""
+                    cd ec2
+                    terraform plan
+                """
+            }
+        }  
+        stage('apply') {
+             steps {
+                echo 'apply....'
+                sh"""
+                    cd ec2
+                    terraform apply
+                """
+            }
+        }
+        // stage('destroy') {
+        //      steps {
+        //         echo 'destroy....'
+        //         sh"""
+        //             cd ec2
+        //         """
+        //     }
+        }
+    }
+    // post build
+    post { 
+        always { 
+            echo 'It will run whethere job is sucess or not'
+        }
+        success { 
+            echo 'It will run whethere job is sucess'
+        }
+        failure { 
+            echo 'It will run whethere job is failure'
+        }    
+    }     
+}
