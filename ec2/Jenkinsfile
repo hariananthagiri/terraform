@@ -10,6 +10,10 @@ pipeline {
     // parameters {
     // string(name: 'Name', defaultValue: 'hari krishna', description: 'writeing my name')
     // }
+    input{
+        message "should we continue?"
+        ok "yes, we should." 
+    }
 
     // build
     stages {
