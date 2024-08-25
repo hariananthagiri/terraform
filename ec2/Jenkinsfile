@@ -7,11 +7,7 @@ pipeline {
     options {
         ansiColor('xterm')
     }
-    input {
-        message "should we continue?"
-        ok "yes, we should." 
-    }
-
+    
     // build
     stages {
         stage('init') {
@@ -33,6 +29,10 @@ pipeline {
             }
         }  
         stage('apply') {
+            input {
+                message "should we continue?"
+                ok "yes, we should." 
+            }
             steps {
                 echo 'apply....'
                 sh"""
