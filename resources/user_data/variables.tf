@@ -4,12 +4,12 @@ variable "ami_id" {
 }
 variable "instance_type" {
   type = string
-  default = "t2.micro"
+  default = "t3.micro"
 }
 # declereing map variable
 variable "instance_name" {
   type = map
   default = {
-  Name = "terraform"
+  Name = "jenkins"
   }
 }

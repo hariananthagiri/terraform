@@ -20,10 +20,11 @@ resource "aws_security_group" "roboshop-all" {
     egress {
       # rules
     }
+  tags {
+    # tag names
+  }
 }
 ```
-
-
 ###  ingress
 
 ```terraform
@@ -97,7 +98,7 @@ egress {
 ##### syntax
 * adding inbound and outbound rules to a security_group
 ```terraformr
-esource "aws_security_group_rule" "web1" {
+resource "aws_security_group_rule" "web1" {
   type = "ingress"
   protocol = "tcp"
   from_port = 22

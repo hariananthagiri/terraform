@@ -6,7 +6,15 @@
 
 #### infrastructure creation --------------->  server creation
 #### configuration management ---------------> server configuration
-
+### setup
+* to get the infrastructure whatever we created in terraform to our aws account do fallowing setup
+* **login to aws account ===> IAM ===> uses ===> create user ===> set permission bu attaching requied policys ===> finally click on create user**
+* **click on created user ===> select security crredentials ===> crete access keys ===> select CLI ===> click on create access keys**
+* now copy the access key and secret access key values and give in aws console by using below command
+```
+aws configure
+```
+* or we can provide it in terraform providers it is confidential credentials not recommended to give it openly 
 ##### after running terraform apply and now doing changes in code  before editing anything in terraform distroy it first
 
 ### terraform commands
