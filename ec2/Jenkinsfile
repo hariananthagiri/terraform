@@ -29,10 +29,10 @@ pipeline {
             }
         }  
         stage('apply') {
-            input {
-                message "should we continue?"
-                ok "yes, we should." 
-            }
+            // input {
+            //     message "should we continue?"
+            //     ok "yes, we should." 
+            // }
             steps {
                 echo 'apply....'
                 sh"""
@@ -41,15 +41,15 @@ pipeline {
                 """
             }
         }
-        stage('destroy') {
-             steps {
-                echo 'destroy....'
-                sh"""
-                    cd ec2
-                    terraform destroy -auto-approve
-                """
-            }
-        }
+        // stage('destroy') {
+        //      steps {
+        //         echo 'destroy....'
+        //         sh"""
+        //             cd ec2
+        //             terraform destroy -auto-approve
+        //         """
+        //     }
+        // }
     }
     // post build
     post { 
