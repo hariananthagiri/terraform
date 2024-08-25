@@ -41,14 +41,15 @@ pipeline {
                 """
             }
         }
-        // stage('destroy') {
-        //      steps {
-        //         echo 'destroy....'
-        //         sh"""
-        //             cd ec2
-        //         """
-        //     }
-        // }
+        stage('destroy') {
+             steps {
+                echo 'destroy....'
+                sh"""
+                    cd ec2
+                    terraform destroy -auto-approve
+                """
+            }
+        }
     }
     // post build
     post { 
