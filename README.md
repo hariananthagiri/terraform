@@ -47,5 +47,7 @@ aws configure
 * to import the existing infrastucture  
     * **terraform import state-file instace-id**
 
-
+* **to pass variables in command line**
+    *  **terraform apply -var "variable_name=value"**
+    *  **terraform apply -var-file="file_name.tfvars"**
 
